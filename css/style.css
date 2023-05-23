@@ -1,0 +1,111 @@
+@import "color.css";
+@import "common.css";
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+    
+    RESET
+    
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+/*
+
+    HEADER
+
+*/
+.header-content{
+    display: flex;
+    justify-content: space-around;
+}
+.header-content .nav-menu{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+    MAIN
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+    FOOTER
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+    MEDIA QUERY
+
+*/
+
+@media screen and (min-width: 992px){
+    .header-content .nav-menu{
+        display: block;
+    }
+    .header-content .hamb-menu{
+        display: none;
+    }
+
+}
+
+
