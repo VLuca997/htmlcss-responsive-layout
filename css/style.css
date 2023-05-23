@@ -3,15 +3,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
 /*
     
     RESET
@@ -32,23 +23,24 @@
 */
 .header-content{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: .625rem 0;
 }
 .header-content .nav-menu{
     display: none;
 }
+.header-content .nav-menu ul{
+    display: flex;
+    list-style: none;
 
-
-
-
-
-
-
-
-
-
-
-
+}
+.header-content .nav-menu ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 0.625rem;
+    
+}
 
 
 
@@ -57,6 +49,42 @@
     MAIN
 
 */
+main section {
+    padding: 2rem 0;
+    
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -0.625rem;
+    text-align: center;
+    
+}
+.card{
+    width: calc(100% - 1.25rem);
+    margin: .625rem;
+}
+.card > div{
+    padding: 0.625rem;
+}
+
+
+
+#s3{
+    text-align: center;
+    padding: .625rem;
+    
+}
+.card-comment{
+    margin-top: 2.5rem;
+    color: white;
+
+}
+.card-partner{
+    margin-bottom: 1.25rem;
+    border-radius: 10%;
+}
 
 
 
@@ -66,6 +94,24 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  
+
+    SECTION 3
+
+*/
 
 
 
@@ -98,13 +144,55 @@
 
 */
 
-@media screen and (min-width: 992px){
-    .header-content .nav-menu{
-        display: block;
-    }
+@media screen and (min-width: 992px){     /*DESKTOP*/
+    /* Header */
+
     .header-content .hamb-menu{
         display: none;
     }
+    .header-content .nav-menu{
+        display: block;
+    }
+
+    /* Main */
+    .card .big-card-container{
+        display: flex;
+        
+    }
+    .card .big-card-container > div{
+        width: 50%;
+    }
+    .planning-container {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 768px){     /*TABLET*/
+    /* Header */
+    
+    
+
+
+    /* Main */
+    .card{
+        width: calc((100% / 3) - 1.25rem);
+        text-align: start;
+
+    }
+
+    .card:first-child{
+        width: calc(((100% / 3) * 2) - 1.25rem);
+    }
+    .card-partner{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: baseline;
+    }
+
+    /* Footer */
+
 
 }
 
