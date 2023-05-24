@@ -21,19 +21,7 @@
     HEADER
 
 */
-.header-content{
-    display: flex;
-    justify-content: space-between;
-    padding: .625rem 0;
-}
-.header-content .nav-menu{
-    display: none;
-}
-.header-content .nav-menu ul{
-    display: flex;
-    list-style: none;
 
-}
 .header-content .nav-menu ul li a{
     display: inline-block;
     text-decoration: none;
@@ -69,6 +57,10 @@ main section {
     padding: 0.625rem;
 }
 
+.planning-container > *{
+    text-align: center;
+    padding: .625rem 1.25rem;
+}
 
 
 #s3{
@@ -87,6 +79,21 @@ main section {
 }
 
 
+#s4 .container-benefit-card h2{
+    text-align: center;
+    color: white;
+}
+
+
+#s4 .cards-b{
+}
+
+#s4 .card-b {
+    width: calc(33% - 1.250rem);
+    background-color: white;
+    margin: .625rem;
+    text-align: center;
+}
 
 
 
@@ -105,13 +112,6 @@ main section {
 
 
 
-
-
-/*  
-
-    SECTION 3
-
-*/
 
 
 
@@ -143,7 +143,55 @@ main section {
     MEDIA QUERY
 
 */
+@media screen and (min-width: 0){
+    .header-content{
+    display: flex;
+    justify-content: space-between;
+    padding: .625rem 0;
+}
+.header-content .nav-menu{
+    display: none;
+}
+.header-content .nav-menu ul{
+    display: flex;
+    list-style: none;
 
+}
+/* MAIN */
+
+}
+
+
+@media screen and (min-width: 768px){     /*TABLET*/
+    /* Header */
+    
+    
+
+
+    /* Main */
+    #s1 .card{
+        width: calc((100% / 3) - 1.25rem);
+        text-align: start;
+
+    }
+
+    #s1 .card:first-child{
+        width: calc(((100% / 3) * 2) - 1.25rem);
+    }
+    .card-partner{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: baseline;
+    }
+    #s4 .container-benefit-card .card-b {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;  
+        margin: 1.25rem; 
+    }
+    
+    /* Footer */
+} 
 @media screen and (min-width: 992px){     /*DESKTOP*/
     /* Header */
 
@@ -167,33 +215,15 @@ main section {
         flex-wrap: nowrap;
         align-items: center;
     }
-}
-
-@media screen and (min-width: 768px){     /*TABLET*/
-    /* Header */
-    
-    
-
-
-    /* Main */
-    .card{
-        width: calc((100% / 3) - 1.25rem);
-        text-align: start;
-
-    }
-
-    .card:first-child{
-        width: calc(((100% / 3) * 2) - 1.25rem);
-    }
-    .card-partner{
+    #s4 .container-benefit-card .cards-b {
         display: flex;
-        flex-wrap: nowrap;
-        align-items: baseline;
+        flex-wrap: wrap;
+        justify-content: space-around;  
+        margin: 1.25rem; 
     }
-
-    /* Footer */
-
-
 }
+
+
+    
 
 
