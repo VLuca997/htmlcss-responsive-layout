@@ -21,7 +21,10 @@
     HEADER
 
 */
-
+#main-header{
+    position: sticky;
+    top: 0;
+}
 .header-content .nav-menu ul li a{
     display: inline-block;
     text-decoration: none;
@@ -75,10 +78,18 @@
     MAIN
 
 */
-main section {
-    padding: 2rem 0;
-    
+
+#s1 .big-card-container .left a{
+    text-decoration: none;
+    color: yellow;
+    list-style: none;
 }
+#s1 .big-card-container .left button{
+    background-color: red;
+    padding: .3125rem;
+    border-radius: 14%;
+}
+
 
 .cards{
     display: flex;
@@ -89,16 +100,79 @@ main section {
 }
 .card{
     width: calc(100% - 1.25rem);
-    margin: .625rem;
+    margin: 0 .625rem 20px;
 }
 .card > div{
     padding: 0.625rem;
+    height: 100%;
 }
+#s1 .card:first-child > div{
+    padding: 0;
+} 
+#s1 .card:first-child img{
+    display: block;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+} 
+
+#s1 .card:not(:first-child) {
+    text-align: center;
+}
+
+
+
+
 
 .planning-container > *{
     text-align: center;
     padding: .625rem 1.25rem;
 }
+.planning-container img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+.info-card{
+    padding: 1.25rem;
+    border-radius: 20%;
+    background-color: white;
+    
+    
+}
+.info-card img{
+    width: 100%;
+    background-size: cover;
+    display: block;
+    
+
+}
+.info-card button{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: lavender;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #s3{
@@ -208,6 +282,9 @@ main section {
     #s1 .card:first-child{
         width: calc(((100% / 3) * 2) - 1.25rem);
     }
+    #s1 .card:first-child img{
+        margin: 0;
+    } 
     .card-partner{
         display: flex;
         flex-wrap: nowrap;
@@ -254,8 +331,9 @@ main section {
     }
     .planning-container {
         display: flex;
-        flex-wrap: nowrap;
-        align-items: center;
+        align-items: flex-end;
+        
+        padding: 0 3,125rem;
     }
     .benefit .card{
         width: calc((100% / 3)  - 1.25rem);
