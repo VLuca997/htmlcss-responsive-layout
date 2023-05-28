@@ -12,7 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 
@@ -29,6 +29,44 @@
     padding: 0.625rem;
     
 }
+.hamb-menu{
+    color: white;
+}
+.logo{
+    display: block;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .625rem 0;
+}
+.header-content .nav-menu{
+    display: none;
+}
+.header-content .nav-menu ul{
+    display: flex;
+    list-style: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -77,23 +115,10 @@ main section {
     margin-bottom: 1.25rem;
     border-radius: 10%;
 }
-
-
-#s4 .container-benefit-card h2{
-    text-align: center;
-    color: white;
-}
-
-
-#s4 .cards-b{
-}
-
-#s4 .card-b {
-    width: calc(33% - 1.250rem);
-    background-color: white;
-    margin: .625rem;
+#s4 h2{
     text-align: center;
 }
+
 
 
 
@@ -143,33 +168,38 @@ main section {
     MEDIA QUERY
 
 */
-@media screen and (min-width: 0){
-    .header-content{
-    display: flex;
-    justify-content: space-between;
-    padding: .625rem 0;
-}
-.header-content .nav-menu{
-    display: none;
-}
-.header-content .nav-menu ul{
-    display: flex;
-    list-style: none;
 
-}
+
+
+
+/*MOBILE*/
+@media screen and (min-width: 0){ 
+
 /* MAIN */
 
 }
 
 
-@media screen and (min-width: 768px){     /*TABLET*/
+
+
+
+
+
+
+
+
+
+
+/*TABLET*/
+
+@media screen and (min-width: 768px){     
     /* Header */
     
     
 
 
     /* Main */
-    #s1 .card{
+    .card{
         width: calc((100% / 3) - 1.25rem);
         text-align: start;
 
@@ -183,18 +213,29 @@ main section {
         flex-wrap: nowrap;
         align-items: baseline;
     }
-    #s4 .container-benefit-card .card-b {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;  
-        margin: 1.25rem; 
+    .benefit .card{
+        width: calc(50% - 1.25rem);
+
     }
     
     /* Footer */
 } 
-@media screen and (min-width: 992px){     /*DESKTOP*/
-    /* Header */
 
+
+
+
+
+
+
+
+
+
+
+
+/*DESKTOP*/
+@media screen and (min-width: 992px){     
+
+    /* HEADER */
     .header-content .hamb-menu{
         display: none;
     }
@@ -202,7 +243,8 @@ main section {
         display: block;
     }
 
-    /* Main */
+
+    /* MAIN */
     .card .big-card-container{
         display: flex;
         
@@ -215,12 +257,11 @@ main section {
         flex-wrap: nowrap;
         align-items: center;
     }
-    #s4 .container-benefit-card .cards-b {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;  
-        margin: 1.25rem; 
+    .benefit .card{
+        width: calc((100% / 3)  - 1.25rem);
     }
+
+    /*FOOTER*/
 }
 
 
