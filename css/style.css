@@ -81,22 +81,17 @@
 
 #s1 .big-card-container .left a{
     text-decoration: none;
-    color: yellow;
+    border: none;
     list-style: none;
+    color: white;
 }
-#s1 .big-card-container .left button{
-    background-color: red;
-    padding: .3125rem;
-    border-radius: 14%;
-}
+
 .cards{
     display: flex;
     flex-wrap: wrap;
     margin: 0 -0.625rem;
     text-align: center;
     margin-top: 1.25rem;
-    
-
 }
 .card{
     width: calc(100% - 1.25rem);
@@ -164,6 +159,7 @@
 
 
 
+
 #s3 .container{
     margin-bottom: 50px; 
 }
@@ -200,28 +196,54 @@
 }
 #s3 .testimonial .testimonial-content{
     flex-grow: 1;
+    color: white;
+
 } 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-#s4 h2{
+#s4 .s4-header{
     text-align: center;
+}
+#s4 .feature-card{
+    padding: 1.875rem;
+    background-color: white;
+    border-radius: 1.875rem;
 }
 
 
+
+
+
+
+
+
+#s5 .about-us-container{
+    display: flex;
+}
+
+#s5 .about-us-container p,h2{
+    
+    margin-bottom: 1.3rem;
+}
+#s5 .about-us-container {
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+}
+#s5 .avatar-container{
+    position: relative;
+}   
+#s5 .avatar-container i{
+    position: absolute;
+    right: 0;
+    top:0;
+    font-size: 2rem;
+}   
+
+#s5 .avatar-container img{
+    
+    border-radius: 50%;
+}
 
 
 
@@ -332,8 +354,17 @@
     #s5 .about-us-container{
         display: flex;
     }
-    
+    #s5 .about-us-container > div:first-child{
+        width: 70%;
+    margin-bottom: 0;
 
+    }
+    #s5 .about-us-container > div:last-child{
+        width: 30%;
+    }
+    #s5 .avatar-container i{
+        font-size: 4rem;
+    }  
     /* Footer */
 }
 
@@ -375,6 +406,13 @@
     }
     .benefit .card{
         width: calc((100% / 3)  - 1.25rem);
+    }
+    #s5 .about-us-container > div:first-child{
+        width: 80%;
+        padding-right: 2.5rem;
+    }
+    #s5 .about-us-container > div:last-child{
+        width: 20%;
     }
 
     /*FOOTER*/

@@ -24,3 +24,25 @@ img{
 section{
     scroll-margin-top: 3.75rem;
 }
+
+
+.my-button{
+    display: inline-block;
+    background-color: white;
+    color: black !important;
+    text-decoration: none;
+    padding: .625rem 1.25rem !important;
+    border-radius: 1.875rem;
+
+}
+
+.my-button.blue-button{
+    background-color: var(--main-color);
+    color: white !important;
+    text-decoration: none;
+
+}
+.my-button.purple-button{
+    background-color: var(--secondary-color);
+    color: white !important;
+}
