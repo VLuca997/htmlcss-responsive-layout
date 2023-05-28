@@ -12,7 +12,15 @@ html{
 
 .container{
     margin: 0 auto;
-    max-width: 1140px;
+    max-width: 71.25rem;
     padding: 0 1.25rem;
 
+}
+
+img{
+    max-width: 100%;
+}
+
+section{
+    scroll-margin-top: 3.75rem;
 }

@@ -4,9 +4,9 @@
 
 
 /*
-    
+
     RESET
-    
+
 */
 *{
     margin: 0;
@@ -30,7 +30,7 @@
     text-decoration: none;
     color: white;
     padding: 0.625rem;
-    
+
 }
 .hamb-menu{
     color: white;
@@ -89,14 +89,14 @@
     padding: .3125rem;
     border-radius: 14%;
 }
-
-
 .cards{
     display: flex;
     flex-wrap: wrap;
     margin: 0 -0.625rem;
     text-align: center;
+    margin-top: 1.25rem;
     
+
 }
 .card{
     width: calc(100% - 1.25rem);
@@ -108,14 +108,14 @@
 }
 #s1 .card:first-child > div{
     padding: 0;
-} 
+}
 #s1 .card:first-child img{
     display: block;
     background-size: cover;
     width: 100%;
     height: 100%;
     margin: 0 auto;
-} 
+}
 
 #s1 .card:not(:first-child) {
     text-align: center;
@@ -123,7 +123,9 @@
 
 
 
-
+.planning-container > div:first-child{
+    
+}
 
 .planning-container > *{
     text-align: center;
@@ -138,61 +140,86 @@
     padding: 1.25rem;
     border-radius: 20%;
     background-color: white;
-    
-    
+
+
 }
 .info-card img{
     width: 100%;
     background-size: cover;
     display: block;
-    
+
 
 }
 .info-card button{
     display: inline-block;
     width: 50px;
     height: 50px;
-    background-color: lavender;
+    background-color: var(--secondary-color-bg);
     text-align: center;
     line-height: 50px;
     border-radius: 50%;
     border: none;
+    text-decoration: none;
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#s3{
+#s3 .container{
+    margin-bottom: 50px; 
+}
+#s3 .testimonial-header{
     text-align: center;
-    padding: .625rem;
-    
-}
-.card-comment{
-    margin-top: 2.5rem;
-    color: white;
+    margin-top: 50px;
+    padding: 20px;
+    margin-bottom: 50px;
 
 }
-.card-partner{
+
+#s3 .testimonial-content p{
     margin-bottom: 1.25rem;
-    border-radius: 10%;
 }
+#s3 .testimonial{
+    padding: .625rem;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+#s3 .testimonial .testimonial-img{
+    width: 12.5rem;
+    height: 12.5rem;
+    padding: .9375rem;
+    flex-shrink: 0;
+    margin: 0 auto;
+} 
+.testimonial .testimonial-img img{
+    border-radius: 50%;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#s3 .testimonial .testimonial-content{
+    flex-grow: 1;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #s4 h2{
     text-align: center;
 }
-
 
 
 
@@ -247,10 +274,10 @@
 
 
 /*MOBILE*/
-@media screen and (min-width: 0){ 
+@media screen and (min-width: 0){
 
 /* MAIN */
-
+    
 }
 
 
@@ -266,17 +293,16 @@
 
 /*TABLET*/
 
-@media screen and (min-width: 768px){     
+@media screen and (min-width: 768px){
     /* Header */
-    
-    
+
+
 
 
     /* Main */
     .card{
         width: calc((100% / 3) - 1.25rem);
         text-align: start;
-
     }
 
     #s1 .card:first-child{
@@ -284,19 +310,32 @@
     }
     #s1 .card:first-child img{
         margin: 0;
-    } 
-    .card-partner{
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: baseline;
     }
+
     .benefit .card{
         width: calc(50% - 1.25rem);
-
+    }
+    #s3 .testimonial{
+        display: flex;
+        align-items: center;
+        text-align: left;
+        padding: .625rem;
+    }
+    #s3 .testimonial .testimonial-img{
+        width: 18.75rem;
+        height: 18.75rem;
+        padding-right: 1.25rem;
+    }
+    #s3 .testimonial .testimonial-content{
+        padding: 0 1.875rem;
+    }
+    #s5 .about-us-container{
+        display: flex;
     }
     
+
     /* Footer */
-} 
+}
 
 
 
@@ -310,7 +349,7 @@
 
 
 /*DESKTOP*/
-@media screen and (min-width: 992px){     
+@media screen and (min-width: 992px){
 
     /* HEADER */
     .header-content .hamb-menu{
@@ -324,7 +363,7 @@
     /* MAIN */
     .card .big-card-container{
         display: flex;
-        
+
     }
     .card .big-card-container > div{
         width: 50%;
@@ -332,7 +371,6 @@
     .planning-container {
         display: flex;
         align-items: flex-end;
-        
         padding: 0 3,125rem;
     }
     .benefit .card{
@@ -343,6 +381,6 @@
 }
 
 
-    
+
 
 

@@ -5,6 +5,7 @@
     --main-color: #0084FD;
     --main-color-light: #B5DDFF;
     --secondary-color: #9792E4;
+    --secondary-color-light: #D5D4F4;
 }
 .main-color-text{
     color: var(--main-color);
@@ -26,4 +27,10 @@
 }
 .secondary-color-bg{
     background-color: var(--secondary-color);
+}
+.secondary-color-light-text{
+    color: var(--secondary-color-light);
+}
+.secondary-color-light-bg{
+    background-color: var(--secondary-color-light);
 }
