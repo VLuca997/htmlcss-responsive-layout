@@ -6,6 +6,7 @@
     --main-color-light: #B5DDFF;
     --secondary-color: #9792E4;
     --secondary-color-light: #D5D4F4;
+    --footer-color-bottom:#333333;
 }
 .main-color-text{
     color: var(--main-color);
@@ -33,4 +34,7 @@
 }
 .secondary-color-light-bg{
     background-color: var(--secondary-color-light);
+}
+.footer-bottom-bg{
+    background-color: var(--footer-color-bottom);
 }

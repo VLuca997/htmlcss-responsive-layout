@@ -31,18 +31,22 @@ section{
     background-color: white;
     color: black !important;
     text-decoration: none;
-    padding: .625rem 1.25rem !important;
+    padding: .625rem 1.5625rem !important;
     border-radius: 1.875rem;
+    border: none;
+    font-size: medium;
+    text-decoration: none;
 
 }
 
 .my-button.blue-button{
     background-color: var(--main-color);
     color: white !important;
-    text-decoration: none;
 
 }
 .my-button.purple-button{
     background-color: var(--secondary-color);
     color: white !important;
+    text-decoration: none;
+
 }
